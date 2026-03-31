@@ -30,6 +30,6 @@ Power Supply: Battery pack (Li-ion) with appropriate voltage regulation
 Chassis: 3D-printed 2 tier frame to maintain center of mass above axle
 
 ## Getting Started
-Calibration: Place the robot in its perfectly upright "zero" position and run the calibration script to offset the IMU bias.
+Calibration: Place the robot in its perfectly upright "zero" position and run Calibration.ino to obtain the offset values (IMU bias). In Controls_Project_PID.ino, subtract these offset values from the acceleration (a_x,y,z) and angular velocity (g_x,y,z) terms.
 Tuning: Run Controls_Project_PID.ino. Start with K_i and K_d at zero. Increase K_p until the robot begins to oscillate, then introduce K_d to dampen the movement. Finally, use K_i to correct long-term drift.
 
