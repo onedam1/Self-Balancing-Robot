@@ -22,9 +22,12 @@ PWM Motor Control: Converts the PID output into Pulse Width Modulation signals f
 Sample Rate Optimization: Fixed-loop timing to ensure the dt component of the PID calculation remains constant for stability.
 
 ## Hardware Implementation
-Microcontroller: (e.g., Arduino, ESP32, or STM32)
-Sensors: MPU6050 (Accelerometer + Gyroscope)
-Actuators: N20 or 550 geared motors with encoders
+Microcontroller: ESP32-WROOM-32 for real-time control loop execution
+IMU Sensor: MPU6050 (accelerometer + gyroscope) for tilt angle estimation
+Motor Driver: TB6612FNG for bidirectional motor control
+Motors: Dual DC geared motors (two-wheel differential setup)
+Power Supply: Battery pack (Li-ion) with appropriate voltage regulation
+Chassis: 3D-printed 2 tier frame to maintain center of mass above axle
 
 ## Getting Started
 Calibration: Place the robot in its perfectly upright "zero" position and run the calibration script to offset the IMU bias.
