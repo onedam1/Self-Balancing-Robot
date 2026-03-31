@@ -1,5 +1,6 @@
 # Self-Balancing-Robot
 Self balancing robot using PID
+[Image of Robot](Balancing_Robot_Picture.png)
 
 ## Project Overview
 The core of this project is a discrete-time PID controller that processes data from an Inertial Measurement Unit (IMU) to calculate the necessary motor output. By balancing the "tilt" of the robot, the system compensates for gravity and external disturbances.
