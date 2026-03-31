@@ -13,7 +13,9 @@ Derivative (K_d): Predicts future error by analyzing the rate of change, providi
 The ideal output is calculated as: u(t) = K_p*e(t) + K_i*e(t)dt + K_d* INT{de(t)/dt} 
 
 ## Features
-Sensor Fusion: Implements a Complementary Filter (or Kalman Filter) to combine accelerometer and gyroscope data for an accurate, low-noise pitch angle.PID Tuning: Modular constants (K_p, K_i, K_d) for easy calibration.
+Sensor Fusion: Implements a Complementary Filter (or Kalman Filter) to combine accelerometer and gyroscope data for an accurate, low-noise pitch angle.
+
+PID Tuning: Modular constants (K_p, K_i, K_d) for easy calibration.
 
 PWM Motor Control: Converts the PID output into Pulse Width Modulation signals for high-torque DC motors.
 
