@@ -10,7 +10,7 @@ Proportional (K_p): Reacts to the current error (the difference between the desi
 Integral (K_i): Accounts for past errors and eliminates steady-state offsets, ensuring the robot doesn't lean permanently in one direction.
 Derivative (K_d): Predicts future error by analyzing the rate of change, providing a "damping" effect to prevent overshooting.
 
-The ideal output is calculated as: u(t) = K_p*e(t) + K_i*e(t)dt + K_d* INT{de(t)/dt} 
+The ideal output is calculated as: u(t) = K_p * e(t) + K_i * e(t)dt + K_d* INT{de(t)/dt} 
 
 ## Features
 Sensor Fusion: Implements a Complementary Filter (or Kalman Filter) to combine accelerometer and gyroscope data for an accurate, low-noise pitch angle.
